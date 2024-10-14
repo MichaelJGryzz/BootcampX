@@ -1,4 +1,4 @@
-SELECT cohorts.name as name,
+SELECT cohorts.name AS name,
        avg(completed_at - started_at) AS average_assistance_time
 FROM assistance_requests
 JOIN students ON assistance_requests.student_id = students.id

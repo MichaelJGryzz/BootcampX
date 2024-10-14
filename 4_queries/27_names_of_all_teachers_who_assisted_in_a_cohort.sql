@@ -1,6 +1,6 @@
 SELECT DISTINCT 
     teachers.name AS teacher,
-    cohorts.name as cohort
+    cohorts.name AS cohort
 FROM teachers
 JOIN assistance_requests ON teacher_id = teachers.id
 JOIN students ON student_id = students.id
